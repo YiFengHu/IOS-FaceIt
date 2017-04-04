@@ -99,6 +99,8 @@ class ViewController: UIViewController {
     }
     
     private func updateUI()  {
+        
+        if faceView != nil {
         switch faceExpression.eyeBrow {
         case .Angry:faceView.eyeBrowDegree = 1.0
         case .Normal:faceView.eyeBrowDegree = 0.0
@@ -117,7 +119,7 @@ class ViewController: UIViewController {
         case .Smirk: faceView.smileCurvature = -0.5
         case .Frown: faceView.smileCurvature = -1.0
         }
-        
+        }
     }
 }
 

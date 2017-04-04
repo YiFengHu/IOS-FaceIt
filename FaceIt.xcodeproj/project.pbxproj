@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87631FE31E93500400DD735F /* ExpressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87631FE21E93500400DD735F /* ExpressionViewController.swift */; };
 		87F199531E8BF4D5006B9DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F199521E8BF4D5006B9DF1 /* AppDelegate.swift */; };
 		87F199551E8BF4D5006B9DF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F199541E8BF4D5006B9DF1 /* ViewController.swift */; };
 		87F199581E8BF4D5006B9DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F199561E8BF4D5006B9DF1 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87631FE21E93500400DD735F /* ExpressionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionViewController.swift; sourceTree = "<group>"; };
 		87F1994F1E8BF4D5006B9DF1 /* FaceIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F199521E8BF4D5006B9DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87F199541E8BF4D5006B9DF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				87F199561E8BF4D5006B9DF1 /* Main.storyboard */,
 				87F199651E8BF515006B9DF1 /* FaceView.swift */,
 				87F199671E8C157B006B9DF1 /* FaceExpression.swift */,
+				87631FE21E93500400DD735F /* ExpressionViewController.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				87F199551E8BF4D5006B9DF1 /* ViewController.swift in Sources */,
 				87F199531E8BF4D5006B9DF1 /* AppDelegate.swift in Sources */,
 				87F199681E8C157B006B9DF1 /* FaceExpression.swift in Sources */,
+				87631FE31E93500400DD735F /* ExpressionViewController.swift in Sources */,
 				87F199661E8BF515006B9DF1 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +319,7 @@
 				87F199631E8BF4D5006B9DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
