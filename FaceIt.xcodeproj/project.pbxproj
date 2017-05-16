@@ -15,6 +15,7 @@
 		87F1995D1E8BF4D5006B9DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F1995B1E8BF4D5006B9DF1 /* LaunchScreen.storyboard */; };
 		87F199661E8BF515006B9DF1 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F199651E8BF515006B9DF1 /* FaceView.swift */; };
 		87F199681E8C157B006B9DF1 /* FaceExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F199671E8C157B006B9DF1 /* FaceExpression.swift */; };
+		908A153D1ECAC8E900C08804 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908A153C1ECAC8E900C08804 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		87F1995E1E8BF4D5006B9DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87F199651E8BF515006B9DF1 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		87F199671E8C157B006B9DF1 /* FaceExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceExpression.swift; sourceTree = "<group>"; };
+		908A153C1ECAC8E900C08804 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		87F199511E8BF4D5006B9DF1 /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
+				908A153C1ECAC8E900C08804 /* MainTableViewController.swift */,
 				87F199641E8BF4F1006B9DF1 /* Support Files */,
 				87F199541E8BF4D5006B9DF1 /* ViewController.swift */,
 				87F199561E8BF4D5006B9DF1 /* Main.storyboard */,
@@ -157,6 +160,7 @@
 				87F199531E8BF4D5006B9DF1 /* AppDelegate.swift in Sources */,
 				87F199681E8C157B006B9DF1 /* FaceExpression.swift in Sources */,
 				87631FE31E93500400DD735F /* ExpressionViewController.swift in Sources */,
+				908A153D1ECAC8E900C08804 /* MainTableViewController.swift in Sources */,
 				87F199661E8BF515006B9DF1 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

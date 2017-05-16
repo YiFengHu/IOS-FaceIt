@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ffz-YY-egl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ffz-YY-egl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -73,35 +73,35 @@
             <point key="canvasLocation" x="-232.5" y="501.5"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="3OV-GT-sEp">
+        <scene sceneID="F9t-Ye-FBb">
             <objects>
-                <navigationController id="F2Q-Y6-ap7" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OSb-0J-e06">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1N-9Q-wb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="JZh-iD-AWi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sZu-xx-DMX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="daf-af-GME" kind="relationship" relationship="rootViewController" id="jbX-x5-n8e"/>
+                        <segue destination="Wyh-Vr-nCp" kind="relationship" relationship="rootViewController" id="7Ip-A1-8QL"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mWN-vb-xSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-803" y="-384"/>
+            <point key="canvasLocation" x="-3076" y="-709"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Qfs-Bg-D5j">
             <objects>
                 <splitViewController id="ffz-YY-egl" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="F2Q-Y6-ap7" kind="relationship" relationship="masterViewController" id="yfc-FA-aX0"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="Agu-pO-QSX"/>
+                        <segue destination="JZh-iD-AWi" kind="relationship" relationship="masterViewController" id="Hj8-lt-Z7O"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmd-ee-4QY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1454" y="-61"/>
+            <point key="canvasLocation" x="-3964" y="186"/>
         </scene>
-        <!--Expression View Controller-->
+        <!--Face It-->
         <scene sceneID="Syl-Rn-FCG">
             <objects>
                 <viewController id="daf-af-GME" customClass="ExpressionViewController" customModule="FaceIt" sceneMemberID="viewController">
@@ -172,14 +172,57 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kKr-Mv-oI1"/>
+                    <navigationItem key="navigationItem" title="Face It" id="kKr-Mv-oI1">
+                        <barButtonItem key="backBarButtonItem" title="Pages" id="Zdl-s9-cEx"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHY-y1-lPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-231" y="-384"/>
+            <point key="canvasLocation" x="-161" y="-385"/>
+        </scene>
+        <!--Pages-->
+        <scene sceneID="wQI-ZX-HMt">
+            <objects>
+                <tableViewController id="Wyh-Vr-nCp" customClass="MainTableViewController" customModule="FaceIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Cjb-Y1-Qlp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Page Item" textLabel="0ul-y0-tn4" style="IBUITableViewCellStyleDefault" id="sUz-U0-XE7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sUz-U0-XE7" id="Awi-yQ-b8E">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0ul-y0-tn4">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wyh-Vr-nCp" id="7BQ-vi-tRE"/>
+                            <outlet property="delegate" destination="Wyh-Vr-nCp" id="n9L-tA-pGf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Pages" id="8XK-qZ-97C"/>
+                    <connections>
+                        <segue destination="daf-af-GME" kind="show" identifier="Show Face View" id="F4I-7M-Ytr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWn-qO-g4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2007" y="-709"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TzO-fT-FB3"/>
+        <segue reference="IWr-VJ-auK"/>
     </inferredMetricsTieBreakers>
 </document>
